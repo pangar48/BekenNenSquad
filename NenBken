@@ -1,0 +1,293 @@
+<style type="text/css">*{margin:0;}body{background-color:#f2f2f2;font-family:arial,monospace;font-size:1em;}a,a:active,a:hover{color:#404040;text-decoration:none;}.mdr-container{width:auto; height:auto;padding:0px;padding-top:5px;padding-bottom:5px;background-image:linear-gradient(#ffffff,#ffffff);border:0.0px solid #d4d4d4;border-radius:0px;box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);}.inner-container{box-shadow: inset -1px 3px 7px rgba(0,0,0,0.2);border-radius:20px;}.mdr-kat-container{position:relative;width:100%; height:auto;padding-top:14px;padding-bottom:2px;background-image:linear-gradient(#1e9489,#1e9489);border:0px solid #d4d4d4;border-radius:0px;box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)}td.tidakdigunakan{text-align:center;vertical-align:middle;padding:4px;padding-bottom:0px;padding-top:0px;}.td-kategori{text-align:center;vertical-align:top;padding:0px;padding-left:3px;padding-right:5px;padding-bottom:4px}.td-menu{text-align:center;vertical-align:top;padding:3px;padding-top:0px;padding-bottom:0px;font-size:0.6em;font-color:gray;word-wrap:break-word}div.scrollmenu{background-color:transparent;overflow:auto;white-space: nowrap;padding-left:0px;padding-top:2px;padding-right:0px;}div.scrollmenu a {display: inline-block;color:grey;text-align: center;padding:0px;text-decoration:none;}div.scrollmenu a:hover{background-color:#}.thumbnail-scroll {position:relative;display:block;margin:auto;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;width:auto;height:180px;overflow:hidden;text-align:center;border-radius:5px;box-shadow:0px 1px 5px rgba(0,0,0,0.2);white-space:normal}.img-shadow{box-shadow:0px 0px 0px rgba(0, 0, 0, 0.3);border-radius:0px;}.mdr-img {width:auto;height:130px;box-shadow:0px 1px 5px rgba(0,0,0,0.2);border-radius:7px;}.mdr-img-kat{height:100%;width:auto;box-shadow:0px 0px 0px rgba(0,0,0,0.0);border-radius:0px;}div.space{background-color: transparent; height:13px;width:100%}.banner-slide{display:none;box-shadow:0px 3px 10px rgba(0,0,0,0.0);border-radius:0px;}.img-fav-menu{width:80%;max-width:140px;height:auto}
+/* Chat Dropdown */ .mdr-img-cs{width:100%;height:auto;box-shadow:0px 1px 3px rgba(0,0,0,0.3);border-radius:5px;} .mainmenubtn { background-color: transparent; color: white; border: none; cursor: pointer; padding:0px;} .dropdown { position: relative; display: inline-block; z-index:5} .dropdown-child { display: none; background-color:#ffffff; width: 190px; padding: 15px; box-shadow:1px 1px 100px rgba(0,0,0,0.7);border-radius:15px;position:absolute;left:0px;z-index:10} .dropdown-child a { color: white; text-decoration: none; display: block; } .dropdown:hover .dropdown-child { display: block; }
+/* News */
+.news{margin:auto;margin:10px;width:auto; height:auto;padding:5px;padding-top:10px;padding-bottom:10px;background-image:linear-gradient(#ffffff,#ffffff);border:1px solid #e8e8e8;border-radius:5px;box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);}
+.span-news{position:relative;left:0px;display: inline-flex;align-items: center}
+/* Button */ 
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #00a897;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-right: 0px;
+  vertical-align:middle;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 10px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<!-- TEXT BERJALAN --><div style="height:auto;width:auto;padding:4px;padding-top:5px;border-radius:0px;box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);background-image:linear-gradient(#1e9c8f,#1e9c8f)"><font color="white" size="2"><marquee>Hai kak, Selamat Datang Kembali di TokoMu - Toko Online Kecantikan & Kesehatan Indonesia, CantikSehat hanya menyediakan produk berkulitas premium dan original 100% yang sudah teregistrasi di BPOM Indonesia maupun MUI, selamat berbelanja. </marquee></font></div><!-- END -->
+<div class="space" style="height:9px"></div>
+<!-- BANNER SLIDE -->
+<div style="width:100%;margin:0px auto;margin-top:0px;margin-bottom:0px"><a href=""><img class="banner-slide" src="https://i.ibb.co/SfyZ2qL/16-18-50-51c084075327c154a1d9.jpg" style="width:100%" alt="Banner Slide 1></a><a href=""><img class="banner-slide" src="https://i.ibb.co/nccdjsy/16-19-10-81697e34855ec1e5b74f.jpg" style="width:100%" alt="Banner Slide 2"></a><a href=""><img class="banner-slide" src="https://i.ibb.co/PG8NPNk/16-21-17-221d05340e3559e44cc1.jpg" style="width:100%" alt="Banner Slide 3"></a></div><script>var myIndex = 0;carousel();function carousel() {var i; var x =document.getElementsByClassName("banner-slide"); for (i = 0; i < x.length; i++) { x[i].style.display = "none";}myIndex++;if (myIndex > x.length) {myIndex = 1} x[myIndex-1].style.display = "block";setTimeout(carousel, 4000); }</script><!-- END -->
+<div class="space"></div>
+<!-- MENU FAVORIT --><div class="mdr-container"><table style="width:auto;margin:5px"><!-- Icon Row 1 --><tr><td class="td-menu"><a href="https://telegra.ph/artikel-kamu" target="_blank"><img class="img-fav-menu" src="https://1.bp.blogspot.com/-3wjk8Nk3AOw/XmcPjkR0sBI/AAAAAAAALHM/cTJSvWn7nU4GhDKgUXlOg_6Rf6ndeUSrACLcBGAsYHQ/s1600/reseller.png" alt="Join Distributor"></a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?voucher"><img class="img-fav-menu" src="https://i.ibb.co/529pXwQ/voucher-belanja.png" alt="Voucher Belanja"></a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/user?page=favorit"><img class="img-fav-menu" src="https://i.ibb.co/VTkpffW/favorite-saya.png" alt="Favorit Saya"></a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?peraturan"><img class="img-fav-menu" src="https://i.ibb.co/h9FmpLv/syarat-kondisi.png" alt="Syarat & Ketentuan"></a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?kontak"><img class="img-fav-menu" src="https://i.ibb.co/kBcS754/link-cantiksehat.png" alt="Link TokoMu"></a></td></tr><!-- Label Row 1 --><tr><td class="td-menu"><a href="https://telegra.ph/artikelmu" target="_blank">Join Distributor</a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?voucher">Voucher Belanja</a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/user?page=favorit">Favorit Saya</a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?peraturan">Syarat & Ketentuan</a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?kontak">TokoMu Link</a></td></tr></table></div><!-- END -->
+<!-- CHAT KAMI & BAGIKAN --><div style="position:relative;top:0px;padding:4px;padding-top:18px;padding-bottom:18px;"><div style="position:relative;width:100%;height:auto;z-index:2"><div class="dropdown"> <div class="mainmenubtn"><img align="center" src="https://i.ibb.co/F623bdJ/20200209-091107.png" alt="Chat Admin" style="width:140px;height:auto;border-radius:100px;box-shadow:0px 1px 5px rgba(0,0,0,0.3)"></div> <div class="dropdown-child"> <a href="https://api.whatsapp.com/send?phone=62811111111111"><img class="mdr-img-cs" src="https://i.ibb.co/MhHhW1C/download(6).png" alt="CS 1" style="margin-bottom:5px"</a> <a href="https://api.whatsapp.com/send?phone=6283175388674"><img class="mdr-img-cs" src="https://i.ibb.co/47yHCWL/download(8).png" style="margin-top:5px" alt="CS 2"></a></div> </div></a><a href="https://api.whatsapp.com/send?text=Toko Anda | Belanja Produk Kecantikan dan Kesehatan 100% Original BPOM! Dapatkan Free Ongkir hingga 30ribu. Download yuk Aplikasinya skrg! klik https://app.bukaolshop.semuaapp"><img src="https://i.ibb.co/8rxH1zr/download(7).png" alt="share app" style="width:140px;height:auto;box-shadow:0px 1px 5px rgba(0,0,0,0.3);border-radius:100px;vertical-align:midle;float:right;"></a></div></div><!-- END -->
+<!-- KATEGORI SLIDE --><div class="mdr-container" style="padding-top:15px;padding-bottom:5px"><font color="#000000"><span style="position:relative;left:10px;display: inline-flex; align-items: center;"><img src="https://i.ibb.co/TgDmbjX/download(9).png" style="width:30px;height:auto;margin-right:5px"><p>Pilih Kategori<br/><font color="#059988" size="1em">Tampilkan produk berdasarkan kategori.</font></p></span></font><span style="float:right;"><a href="https://m.tokopedia.com/kategori"><button class="button" style="vertical-align:middle;margin-right:10px"><span>LIHAT SEMUA</span></button></a></span><script src="https://rawcdn.githack.com/modernplay/hostfile/f1a50044e552a32247eb808f8876abbb6bc12554/jssor.slider-kat.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideWidth: 450,
+              $SlideHeight: 250,
+              $SlideSpacing: 20
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 900;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.9s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+		}	
+		.img-slide {
+			border-radius: 10px;
+			box-shadow: 0px 1px 5px rgba(0,0,0,0.0);
+        }
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;margin-top:12px;margin-bottom:10px;top:0px;left:0px;width:900px;height:250px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:900px;height:250px;overflow:hidden;">
+            <div>
+            <a href="https://tokomu.bukaolshop.site/cari?kategori=8304"><img class="img-slide" data-u="image" src="https://i.ibb.co/qn7P0rM/shoope.jpg" /></a>
+            </div>
+            <div>
+            <a href="https://tokomu.bukaolshop.site/cari?kategori=8305"><img class="img-slide" data-u="image" src="https://i.ibb.co/8gvLLf3/kosmetic-perawatan.jpg" /></a>
+            </div>
+            <div>
+            <a href="https://tokomu.bukaolshop.site/cari?kategori=8306"><img class="img-slide" data-u="image" src="https://i.ibb.co/SP6wy37/rumah-tangga.jpg" /></a>
+            </div>
+            <div>
+            <a href="https://tokomu.bukaolshop.site/cari?kategori=8531"><img class="img-slide" data-u="image" src="https://i.ibb.co/fkr5vhY/kebugaran-pria.jpg" /></a>
+            </div>
+			<div>
+            <a href="https://tokomu.bukaolshop.site/cari?kategori=8307"><img class="img-slide" data-u="image" src="https://i.ibb.co/9gJfZpT/serba-serbi.jpg" /></a>
+            </div>
+</div>
+<a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">image gallery</a>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script></div><!-- END -->
+<div class="space"></div>
+<!-- W A R N I N G !  Dilarang keras menyebarkan seluruh ataupun sebagian dari source code ini baik untuk tujuan komersil maupun tidak kepada pihak manapun tanpa seijin dari team ModernPlay.
+
+Jika template yang kami bagikan ini dirasa memberikan nilai lebih pada aplikasimu, silahkan memberikan donasi untuk mendukung team ModernPlay dalam mengembangkan ide-ide yang lebih kreatif lagi.
+Salurkan Donasi Kalian ke :
+DANA/OVO/GOPAY No: 083163009883
+
+Contact kami:
+WA: 0831.6300.9883, 
+email: modernplay.id@gmail.com.
+
+copyright Â© ModernPlay 2020 -->
+
+<style type="text/css">*{margin:0;}body{background-color:#f2f2f2;font-family:arial,monospace;font-size:1em;}a,a:active,a:hover{color:#404040;text-decoration:none;}.mdr-container{width:auto; height:auto;padding:0px;padding-top:5px;padding-bottom:5px;background-image:linear-gradient(#ffffff,#ffffff);border:0.0px solid #d4d4d4;border-radius:0px;box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);}.inner-container{box-shadow: inset -1px 3px 7px rgba(0,0,0,0.2);border-radius:20px;}.mdr-kat-container{position:relative;width:100%; height:auto;padding-top:14px;padding-bottom:2px;background-image:linear-gradient(#1e9489,#1e9489);border:0px solid #d4d4d4;border-radius:0px;box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0)}td.tidakdigunakan{text-align:center;vertical-align:middle;padding:4px;padding-bottom:0px;padding-top:0px;}.td-kategori{text-align:center;vertical-align:top;padding:0px;padding-left:3px;padding-right:5px;padding-bottom:4px}.td-menu{text-align:center;vertical-align:top;padding:3px;padding-top:0px;padding-bottom:0px;font-size:0.6em;font-color:gray;word-wrap:break-word}div.scrollmenu{background-color:transparent;overflow:auto;white-space: nowrap;padding-left:0px;padding-top:2px;padding-right:0px;}div.scrollmenu a {display: inline-block;color:grey;text-align: center;padding:0px;text-decoration:none;}div.scrollmenu a:hover{background-color:#}.thumbnail-scroll {position:relative;display:block;margin:auto;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;width:auto;height:180px;overflow:hidden;text-align:center;border-radius:5px;box-shadow:0px 1px 5px rgba(0,0,0,0.2);white-space:normal}.img-shadow{box-shadow:0px 0px 0px rgba(0, 0, 0, 0.3);border-radius:0px;}.mdr-img {width:auto;height:130px;box-shadow:0px 1px 5px rgba(0,0,0,0.2);border-radius:7px;}.mdr-img-kat{height:100%;width:auto;box-shadow:0px 0px 0px rgba(0,0,0,0.0);border-radius:0px;}div.space{background-color: transparent; height:13px;width:100%}.banner-slide{display:none;box-shadow:0px 3px 10px rgba(0,0,0,0.0);border-radius:0px;}.img-fav-menu{width:80%;max-width:140px;height:auto}
+/* Chat Dropdown */ .mdr-img-cs{width:100%;height:auto;box-shadow:0px 1px 3px rgba(0,0,0,0.3);border-radius:5px;} .mainmenubtn { background-color: transparent; color: white; border: none; cursor: pointer; padding:0px;} .dropdown { position: relative; display: inline-block; z-index:5} .dropdown-child { display: none; background-color:#ffffff; width: 190px; padding: 15px; box-shadow:1px 1px 100px rgba(0,0,0,0.7);border-radius:15px;position:absolute;left:0px;z-index:10} .dropdown-child a { color: white; text-decoration: none; display: block; } .dropdown:hover .dropdown-child { display: block; }
+/* News */
+.news{margin:auto;margin:10px;width:auto; height:auto;padding:5px;padding-top:10px;padding-bottom:10px;background-image:linear-gradient(#ffffff,#ffffff);border:1px solid #e8e8e8;border-radius:5px;box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);}
+.span-news{position:relative;left:0px;display: inline-flex;align-items: center}
+/* Button */ 
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #00a897;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-right: 0px;
+  vertical-align:middle;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 10px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<!-- TEXT BERJALAN --><div style="height:auto;width:auto;padding:4px;padding-top:5px;border-radius:0px;box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);background-image:linear-gradient(#1e9c8f,#1e9c8f)"><font color="white" size="2"><marquee>Hai kak, Selamat Datang Kembali di TokoMu - Toko Online Kecantikan & Kesehatan Indonesia, CantikSehat hanya menyediakan produk berkulitas premium dan original 100% yang sudah teregistrasi di BPOM Indonesia maupun MUI, selamat berbelanja. </marquee></font></div><!-- END -->
+<div class="space" style="height:9px"></div>
+<!-- BANNER SLIDE -->
+<div style="width:100%;margin:0px auto;margin-top:0px;margin-bottom:0px"><a href=""><img class="banner-slide" src="https://i.ibb.co/SfyZ2qL/16-18-50-51c084075327c154a1d9.jpg" style="width:100%" alt="Banner Slide 1></a><a href=""><img class="banner-slide" src="https://i.ibb.co/nccdjsy/16-19-10-81697e34855ec1e5b74f.jpg" style="width:100%" alt="Banner Slide 2"></a><a href=""><img class="banner-slide" src="https://i.ibb.co/PG8NPNk/16-21-17-221d05340e3559e44cc1.jpg" style="width:100%" alt="Banner Slide 3"></a></div><script>var myIndex = 0;carousel();function carousel() {var i; var x =document.getElementsByClassName("banner-slide"); for (i = 0; i < x.length; i++) { x[i].style.display = "none";}myIndex++;if (myIndex > x.length) {myIndex = 1} x[myIndex-1].style.display = "block";setTimeout(carousel, 4000); }</script><!-- END -->
+<div class="space"></div>
+<!-- MENU FAVORIT --><div class="mdr-container"><table style="width:auto;margin:5px"><!-- Icon Row 1 --><tr><td class="td-menu"><a href="https://telegra.ph/artikel-kamu" target="_blank"><img class="img-fav-menu" src="https://1.bp.blogspot.com/-3wjk8Nk3AOw/XmcPjkR0sBI/AAAAAAAALHM/cTJSvWn7nU4GhDKgUXlOg_6Rf6ndeUSrACLcBGAsYHQ/s1600/reseller.png" alt="Join Distributor"></a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?voucher"><img class="img-fav-menu" src="https://i.ibb.co/529pXwQ/voucher-belanja.png" alt="Voucher Belanja"></a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/user?page=favorit"><img class="img-fav-menu" src="https://i.ibb.co/VTkpffW/favorite-saya.png" alt="Favorit Saya"></a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?peraturan"><img class="img-fav-menu" src="https://i.ibb.co/h9FmpLv/syarat-kondisi.png" alt="Syarat & Ketentuan"></a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?kontak"><img class="img-fav-menu" src="https://i.ibb.co/kBcS754/link-cantiksehat.png" alt="Link TokoMu"></a></td></tr><!-- Label Row 1 --><tr><td class="td-menu"><a href="https://telegra.ph/artikelmu" target="_blank">Join Distributor</a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?voucher">Voucher Belanja</a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/user?page=favorit">Favorit Saya</a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?peraturan">Syarat & Ketentuan</a></td><td class="td-menu"><a href="https://tokomu.bukaolshop.site/pages?kontak">TokoMu Link</a></td></tr></table></div><!-- END -->
+<!-- CHAT KAMI & BAGIKAN --><div style="position:relative;top:0px;padding:4px;padding-top:18px;padding-bottom:18px;"><div style="position:relative;width:100%;height:auto;z-index:2"><div class="dropdown"> <div class="mainmenubtn"><img align="center" src="https://i.ibb.co/F623bdJ/20200209-091107.png" alt="Chat Admin" style="width:140px;height:auto;border-radius:100px;box-shadow:0px 1px 5px rgba(0,0,0,0.3)"></div> <div class="dropdown-child"> <a href="https://api.whatsapp.com/send?phone=62811111111111"><img class="mdr-img-cs" src="https://i.ibb.co/MhHhW1C/download(6).png" alt="CS 1" style="margin-bottom:5px"</a> <a href="https://api.whatsapp.com/send?phone=6283175388674"><img class="mdr-img-cs" src="https://i.ibb.co/47yHCWL/download(8).png" style="margin-top:5px" alt="CS 2"></a></div> </div></a><a href="https://api.whatsapp.com/send?text=Toko Anda | Belanja Produk Kecantikan dan Kesehatan 100% Original BPOM! Dapatkan Free Ongkir hingga 30ribu. Download yuk Aplikasinya skrg! klik https://app.bukaolshop.semuaapp"><img src="https://i.ibb.co/8rxH1zr/download(7).png" alt="share app" style="width:140px;height:auto;box-shadow:0px 1px 5px rgba(0,0,0,0.3);border-radius:100px;vertical-align:midle;float:right;"></a></div></div><!-- END -->
+<!-- KATEGORI SLIDE --><div class="mdr-container" style="padding-top:15px;padding-bottom:5px"><font color="#000000"><span style="position:relative;left:10px;display: inline-flex; align-items: center;"><img src="https://i.ibb.co/TgDmbjX/download(9).png" style="width:30px;height:auto;margin-right:5px"><p>Pilih Kategori<br/><font color="#059988" size="1em">Tampilkan produk berdasarkan kategori.</font></p></span></font><span style="float:right;"><a href="https://m.tokopedia.com/kategori"><button class="button" style="vertical-align:middle;margin-right:10px"><span>LIHAT SEMUA</span></button></a></span><script src="https://rawcdn.githack.com/modernplay/hostfile/f1a50044e552a32247eb808f8876abbb6bc12554/jssor.slider-kat.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideWidth: 450,
+              $SlideHeight: 250,
+              $SlideSpacing: 20
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 900;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.9s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+		}	
+		.img-slide {
+			border-radius: 10px;
+			box-shadow: 0px 1px 5px rgba(0,0,0,0.0);
+        }
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;margin-top:12px;margin-bottom:10px;top:0px;left:0px;width:900px;height:250px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:900px;height:250px;overflow:hidden;">
+            <div>
+            <a href="https://tokomu.bukaolshop.site/cari?kategori=8304"><img class="img-slide" data-u="image" src="https://i.ibb.co/qn7P0rM/shoope.jpg" /></a>
+            </div>
+            <div>
+            <a href="https://tokomu.bukaolshop.site/cari?kategori=8305"><img class="img-slide" data-u="image" src="https://i.ibb.co/8gvLLf3/kosmetic-perawatan.jpg" /></a>
+            </div>
+            <div>
+            <a href="https://tokomu.bukaolshop.site/cari?kategori=8306"><img class="img-slide" data-u="image" src="https://i.ibb.co/SP6wy37/rumah-tangga.jpg" /></a>
+            </div>
+            <div>
+            <a href="https://tokomu.bukaolshop.site/cari?kategori=8531"><img class="img-slide" data-u="image" src="https://i.ibb.co/fkr5vhY/kebugaran-pria.jpg" /></a>
+            </div>
+			<div>
+            <a href="https://tokomu.bukaolshop.site/cari?kategori=8307"><img class="img-slide" data-u="image" src="https://i.ibb.co/9gJfZpT/serba-serbi.jpg" /></a>
+            </div>
+</div>
+<a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">image gallery</a>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script></div><!-- END -->
+<div class="space"></div>
+<!-- W A R N I N G !  Dilarang keras menyebarkan seluruh ataupun sebagian dari source code ini baik untuk tujuan komersil maupun tidak kepada pihak manapun tanpa seijin dari team ModernPlay.
+
+Jika template yang kami bagikan ini dirasa memberikan nilai lebih pada aplikasimu, silahkan memberikan donasi untuk mendukung team ModernPlay dalam mengembangkan ide-ide yang lebih kreatif lagi.
+Salurkan Donasi Kalian ke :
+DANA/OVO/GOPAY No: 083163009883
+
+Contact kami:
+WA: 0831.6300.9883, 
+email: modernplay.id@gmail.com.
+
+copyright Â© ModernPlay 2020 -->
